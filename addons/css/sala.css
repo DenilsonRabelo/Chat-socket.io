@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	background: rgb(64,91,227);
+	background: radial-gradient(circle, rgba(64,91,227,1) 0%, rgba(134,179,238,1) 100%);
+}
+
+
+.conteiner {
+	margin-top: 25px;
+	max-height: 90vh;
+	width: 900px;
+	border-radius: 20px;
+	background-color: purple;
+	overflow: hidden;
+}
+
+.sala-conteiner {
+	
+	color: #fff;
+	padding: 20px 20px 60px;
+	overflow-y: scroll;
+}
+
+main {
+	display: grid;
+	max-height: 90vh ;
+	grid-template-columns: 1fr 3fr;
+	background-color:#03045e;
+}
+
+main h2 {
+	font-size: 20px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+main h3 {
+	margin-bottom: 15px;
+}
+
+main ul li {
+	padding: 10px 0;
+}
+
+.conteiner-enviar {
+	display: flex;
+	flex-direction: column;	
+}
+
+.mensagens {
+	background-color: whitesmoke;
+	height: 450px;
+	overflow-y: scroll;
+}
+
+.enviar-conteiner {
+	border-top: 2px solid black;
+	background-color: whitesmoke;
+	width: 100%;
+	height: 72px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-mensagem{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.enviar-conteiner form input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 400px;
+	border-radius: 10px;
+	border: 2px solid blue;
+}
+
+.btn {
+	height: 40px;
+	width: 90px;
+	border-radius: 20px;
+	background-color: blue;
+	color: white;
+	border: none;
+	transition: all .4s linear;
+}
+
+.btn:hover {
+	background-color: transparent;
+	color: black;
+	border: solid 2px blue;
+}
+
+
+
+
+.mensagem {
+	color: white;
+	background: #03045e;
+	padding: 10px;
+	border-radius: 5px;
+	max-width: 250px;
+	margin: 20px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.infos {
+	padding-bottom: 15px;
+	font-size: smaller;
+}
+
+#sair {
+	width: 100%;
+	height: 40px;
+	margin: 10px 0px 20px 0px;
+	background-color: black;
+	border: none;
+	border-radius: 20px;
+	color: white;
+	transition: all .2s linear;
+}
+
+#sair:hover{
+	border: 2px solid black;
+	background-color: white;
+	color: black;
+}
+
+.tempo {
+	display: flex;
+	align-items: flex-end;
+	font-size: 14px;
+	margin-top: 15px;
+	justify-content: end;
+}
+
+.mensagem1 {
+	justify-content: center;
+	color: white;
+	background: rgb(73, 102, 30);
+	padding: 10px;
+	border-radius: 5px;
+	max-width: 250px;
+	min-width: 150px;
+	margin: 20px;
+	margin-left: 55%;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+	--yellow: #feb60a;
+	--red: #ff0062;
+	--blue: #00dbf9;
+	--violet: #da00f7;
+}
+
+div.pre-load {
+	position: absolute;
+	background: rgb(64,91,227);
+	background: radial-gradient(circle, rgba(64,91,227,1) 0%, rgba(134,179,238,1) 100%);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pre-load > div {
+	width: 2vw;
+	height: 2vw;
+	border-radius: 100%;
+	margin: 1vw;
+	background-image: linear-gradient(145deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
+	animation: bounce 1.5s 0.5s linear infinite;
+}
+.yellow {
+	background-color: var(--yellow);
+}
+
+.red {
+	background-color: var(--red);
+	animation-delay: 0.1s;
+}
+
+.blue {
+	background-color: var(--blue);
+	animation-delay: 0.2s;
+}
+
+.violet {
+	background-color: var(--violet);
+	animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+	0%, 50%, 100% {
+		transform: scale(1);
+		filter: blur(0px);
+	}
+	25% {
+		transform: scale(0.6);
+		filter: blur(3px);
+	}
+	75% {
+		filter: blur(3px);
+		transform: scale(1.4);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.login-sala {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-login {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-color: #d8e2dc;
+    width: 450px;
+    height: 400px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.img-login img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.infos-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap :30px;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+.titulo {
+    position: relative;
+    font-size: 25px;
+    font-weight: 500;
+    bottom: 30px;
+    animation: linha 4s infinite linear ease-in-out;
+}
+
+
+
+.titulo::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30%;
+    background-color: #4895ef;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+}
+
+.controles {
+    width: 80%;
+}
+
+.controles label {
+    display: flex;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+input, #sala {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+input:focus , input:valid{
+    border-color: #4895ef;
+}
+
+
+select {
+    cursor: pointer;
+}
+
+.fa-solid {
+    color: black;
+    width: 100px;
+}
+
+
+
+.btn {
+    bottom: 10px;
+    width: 45%;
+    height: 40px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    border: none;
+    letter-spacing: 2px;
+    color: white;
+    background: #4895ef;
+    transition: all 0.9s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+
+
+
+
+
+
+
+

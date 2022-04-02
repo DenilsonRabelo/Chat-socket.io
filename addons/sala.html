@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sala</title>
+  <link rel="stylesheet" href="./css/sala.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <div class="pre-load">
+    <div class="yellow"></div>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="violet"></div>
+  </div>
+  
+
+
+  <div class="conteiner">
+    <main>
+      <div class="sala-conteiner">
+        <h3><i class="fas fa-comments"></i>    Sala:  <span id="nome-sala"></span> </h3>
+        <button id="sair">Sair</button>
+        <h3><i class="fas fa-users"></i> Usuarios</h3>
+        <ul id="usuarios"></ul>
+      </div>
+      <div class="conteiner-enviar">
+        <div class="mensagens"></div>
+        <div class="enviar-conteiner">
+          <form id="form-mensagem">
+            <input id="msg" type="text" placeholder="Escreva Sua Mensagen" required autocomplete="off" />
+            <button class="btn"><i class="fas fa-paper-plane"></i> Enviar</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+    integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/pre_load.js"></script>
+</body>
+
+</html>
