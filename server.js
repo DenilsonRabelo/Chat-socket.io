@@ -1,6 +1,5 @@
 const express = require('express')
 const router = express()
-const PORT =  3000 || process.env.PORT
 const path = require('path')
 const http = require('http')
 const servidor = http.createServer(router)
@@ -47,6 +46,6 @@ io.on('connection', socket => {
     
 })
 
-servidor.listen(PORT, () => {
+servidor.listen(process.env.PORT || 3000, () => {
     console.log("rodando")
 })
