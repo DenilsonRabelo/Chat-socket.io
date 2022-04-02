@@ -44,9 +44,9 @@ io.on('connection', socket => {
         socket.emit('message1', formatacao(usuario.nome, msg))
         socket.broadcast.to(usuario.sala).emit('message', formatacao(usuario.nome , msg))
     });
-
+    
 })
 
-app.listen(PORT, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+servidor.listen(PORT, () => {
+    console.log("rodando")
+})
