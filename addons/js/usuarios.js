@@ -14,7 +14,7 @@ function getUsuario(identificacao) {
 
 function saida(identificacao) {
     const index = usuarios.findIndex(usuarios => usuarios.identificacao === identificacao);
-  
+    
     if (index !== -1) {
       return usuarios.splice(index, 1)[0];
     }

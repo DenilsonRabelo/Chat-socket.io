@@ -1,4 +1,4 @@
-const loading = document.querySelector(".pre-load")
+/*const loading = document.querySelector(".pre-load")
 var count = 4;
 var load = setInterval(animate, 50);
 
@@ -10,4 +10,4 @@ function animate(){
     else{
         count = count + 1;
     }
-}
+}*/
